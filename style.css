@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --bg-mobile-start: hsl(0, 0%, 100%);
+  --bg-mobile-end: hsl(0, 100%, 98%);
+  --main-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font-family: var(--main-font);
+  font-size: 1.0rem;
+  color: var(--dark-grayish-red);
+  overflow-x: hidden;
+}
+
+.main-wrap {
+  display: grid;
+  grid-template-rows: 85px 250px 465px;
+  max-width: 375px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+/* .header__logo {
+  width: auto;
+  height: 25;
+} */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.0rem;
+  width: 100%;
+}
+
+.main-content__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2.5rem
+}
+
+.main-content__title--red {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+.main-content__title--black, 
+.main-content__title--red {
+  letter-spacing: 0.75rem;
+}
+
+.main-content__description {
+  font-weight: 300;
+  color: var(--desaturated-red);
+  font-size: 0.75rem;
+}
+
+.main-content__cta {
+  display: flex;
+  width: 100%;
+}
+
+.cta__email-capture {
+  width: 100%;
+  border-radius: 20px;
+  border: 0;
+  
+}
+
+.cta__submit-btn {
+  border: 0;
+  padding: 15px 22px;
+}
