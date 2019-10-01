@@ -149,7 +149,7 @@ body {
   padding-top: 5px;
   box-shadow: 1px 1px 5px var(--dark-grayish-red);
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .validation-message {
@@ -158,6 +158,14 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--soft-red);
+}
+
+.ml {
+  margin-left: 20px;
+}
+
+.invalid {
+  display: block;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
